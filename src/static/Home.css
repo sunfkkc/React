@@ -1,0 +1,14 @@
+.title{
+    text-align: center;
+}
+h1{
+    padding: 30px;
+}
+.title img{
+    border-radius: 50px;
+}
+p{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}

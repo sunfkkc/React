@@ -1,10 +1,9 @@
-import { useSelector, useDispatch } from 'react-redux'
-import { useState } from 'react'
-import My from './features/my/my'
-import User from './features/user/User'
 import Header from './component/Header'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Login from './pages/Login'
+import Home from './pages/Home'
+import Jwt from './pages/Jwt'
+import Register from './pages/Register'
 
 function App() {
   return (
@@ -12,8 +11,10 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path='/' element={<><My />,<User /></>} />
+          <Route path='/' element={<><Home /></>} />
           <Route path='/login' element={<><Login />,</>} />
+          <Route path='/jwt' element={<><Jwt />,</>} />
+          <Route path='/register' element={<><Register />,</>} />
 
 
         </Routes>

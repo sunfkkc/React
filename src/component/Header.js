@@ -1,45 +1,26 @@
 import React from 'react'
-import { Navbar, Container, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap'
+import { Navbar, Container, Nav, } from 'react-bootstrap'
+import logo from '../static/img/sunf.png'
+import '../static/Header.css'
 function Header() {
     return (
-        <><Navbar bg="light" expand="lg">
-            <Container fluid>
-                <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
-                <Navbar.Toggle aria-controls="navbarScroll" />
-                <Navbar.Collapse id="navbarScroll">
-                    <Nav
-                        className="me-auto my-2 my-lg-0"
-                        style={{ maxHeight: '100px' }}
-                        navbarScroll
-                    >
-                        <Nav.Link href="/">Home</Nav.Link>
-                        <Nav.Link href="page1">Link</Nav.Link>
-                        <NavDropdown title="Link" id="navbarScrollingDropdown">
-                            <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action5">
-                                Something else here
-                            </NavDropdown.Item>
-                        </NavDropdown>
-                        <Nav.Link href="#" disabled>
-                            Link
-                        </Nav.Link>
-                    </Nav>
-                    <Form className="d-flex">
-                        <FormControl
-                            type="search"
-                            placeholder="Search"
-                            className="me-2"
-                            aria-label="Search"
-                        />
-                        <Nav.Link href='/login'>
-                            <Button variant="outline-success">LogIn</Button>
-                        </Nav.Link>
-                    </Form>
-                </Navbar.Collapse>
-            </Container>
-        </Navbar>
+        <>
+            <header>
+                <Navbar bg="light" expand="lg">
+                    <Container>
+                        <Navbar.Brand href="/">
+                            <div className='header'><img src={logo} />Sunfkkc</div>
+                        </Navbar.Brand>
+                        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                        <Navbar.Collapse id="basic-navbar-nav">
+                            <Nav className="me-auto">
+                                <Nav.Link href="/jwt">JWT LogIn</Nav.Link>
+
+                            </Nav>
+                        </Navbar.Collapse>
+                    </Container>
+                </Navbar>
+            </header>
         </>
     )
 }

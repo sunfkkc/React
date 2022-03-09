@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+/*import React, { useState } from 'react'
 import { Form, Container, Button } from 'react-bootstrap'
 import { useNavigate } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
-import { setEmail, setPwd } from '../features/login/loginSlice'
+import { setEmail, setPwd } from '../features/trash/login/loginSlice'
 import axios from 'axios'
 function Login() {
     const user = useSelector((state) => state.login.value)
@@ -47,4 +47,4 @@ function Login() {
     )
 }
 
-export default Login
+export default Login*/
